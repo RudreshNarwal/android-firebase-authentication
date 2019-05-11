@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">BorgesConsulting</string>
+    <string name="app_name">Borges Consulting</string>
+    <string name="email_registration">Email Registration</string>
 </resources>

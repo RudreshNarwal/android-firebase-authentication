@@ -8,12 +8,74 @@
         tools:context=".LoginActivity">
 
     <TextView
+            android:text="@string/common_signin_button_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:id="@+id/labelSignIn" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:textAppearance="@android:style/TextAppearance.Material.Large"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/textLoginEmail"
+            android:hint="Email" android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/labelSignIn"
+            android:layout_marginStart="32dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="32dp" app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/textLoginPassword"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/textLoginEmail" android:hint="Password"/>
+    <Button
+            android:text="Sign In"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSignIn" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/textLoginPassword" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp" style="@style/Widget.AppCompat.Button.Colored"/>
+    <Button
+            android:text="Register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonOpenRegistration" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp"
+            android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/buttonSignIn"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+    <Button
+            android:text="Forgot Password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonForgotPassword" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="32dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonOpenRegistration"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+    <Button
+            android:text="Resend Verification Email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonResendVerification" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/buttonForgotPassword"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarLogin" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent" tools:visibility="invisible"
+            android:visibility="invisible"/>
 
 </android.support.constraint.ConstraintLayout>
