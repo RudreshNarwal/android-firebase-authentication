@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "548200553779",
+    "firebase_url": "https://borgesconsulting-15860.firebaseio.com",
+    "project_id": "borgesconsulting-15860",
+    "storage_bucket": "borgesconsulting-15860.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548200553779:android:a7153bf9fe5e09bb",
+        "android_client_info": {
+          "package_name": "com.borges.consulting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548200553779-4sajip8m1hkbtjj9tiumrf5m5i9cliti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDO2Tt3CO4o1V7v676XHy8D2kBbMLAkWq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548200553779-4sajip8m1hkbtjj9tiumrf5m5i9cliti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
