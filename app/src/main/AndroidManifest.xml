@@ -9,6 +9,10 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity
+                android:name=".SignedInActivity"
+                android:label="@string/title_activity_logged_in">
+        </activity>
         <activity android:name=".RegisterActivity">
         </activity>
         <activity android:name=".LoginActivity">

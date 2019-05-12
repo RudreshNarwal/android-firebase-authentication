@@ -40,6 +40,10 @@ class LoginActivity : AppCompatActivity() {
                                 if (it.isEmailVerified) {
                                     Log.d(TAG, "onAuthStateChanged: signed_in: ${it.uid}")
                                     showToast("Authenticated with: ${it.email}")
+
+                                    startActivity(Intent(this, SignedInActivity::class.java))
+                                    finish()
+
                                 } else {
                                     showToast("Check your email inbox for a Verification Link then try again.")
                                     firebaseAuth.signOut()
@@ -57,6 +61,11 @@ class LoginActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "You didn't fill in all the fields.", Toast.LENGTH_LONG).show()
             }
+        }
+
+        buttonResendVerification.setOnClickListener {
+            val dialog = ResendVerificationDialog()
+            dialog.show(supportFragmentManager, "Resend Verification Email")
         }
     }
 

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Borges Consulting</string>
     <string name="email_registration">Email Registration</string>
+    <string name="title_activity_logged_in">LoggedInActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
